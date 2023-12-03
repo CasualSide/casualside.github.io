@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Jacob - Personal Website</title>
     <style>
         body {
             font-family: 'MS Gothic', 'Arial', sans-serif;
-            background-color: #f2f2f2;
+            background-color: #fff;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -16,7 +16,7 @@
         }
 
         header {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             padding: 1rem;
             font-size: 1.5rem;
@@ -27,7 +27,7 @@
         }
 
         h1, h2, h3 {
-            color: #333;
+            color: #003366;
         }
 
         p {
@@ -35,9 +35,23 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: #003366;
             color: #fff;
             padding: 1rem;
+        }
+
+        .cramped-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .cramped-item {
+            flex: 0 0 calc(33.333% - 1rem);
+            margin: 0.5rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            text-align: left;
         }
     </style>
 </head>
@@ -45,22 +59,40 @@
 
     <header>
         <h1>Jacob</h1>
-        <p>Web Developer | Creative Enthusiast</p>
+        <p>Web Developer | Creative Enthusiast | Professional Dumbass</p>
     </header>
 
     <section>
         <h2>About Me</h2>
         <p>
-           Hi. This website is in development. Not done yet. Come back later
+           Currently is being worked on. Come back later
         </p>
     </section>
 
     <section>
         <h2>Projects</h2>
-        <p>
-            Check out some of my projects below:
-        </p>
-        <!-- Add your project details here -->
+         <!-- Divider between projects -->
+        <div class="cramped-container">
+            <div class="cramped-item">
+                <h3>Drake-o-Meter</h3>
+                 <a href="https://projectether.github.io/drake-o-meter/">github.com/ProjectEther/drake-o-meter</a>
+                <p>See how much times taller you are than a 4'6 friend</p>
+            </div>
+             <!-- Divider between projects -->
+            <div class="cramped-item">
+                <h3>.mp3 Alarm</h3></h3>
+                   <a href="https://projectether.github.io/alarm">Alarm</a>
+                <p>A Alarm where the noise can be a custom mp3</p>
+            </div>
+            <!-- Divider between projects -->
+            <div class="cramped-item">
+                <h3>Bookmarklet-Makr</h3>
+             <a href="https://www.bookmarklet.tk/">Bookmarklet-Makr
+            <p>A simple bookmarklet maker. Just get some Javascript and you have bookmarklet!</p>
+            </div>
+            
+            
+        </div>
     </section>
 
     <footer>
